@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>端API</title>
+    <link rel="stylesheet" type="text/css" href="../css/aui.css" />
+    <script type="text/javascript" src="../script/api.js"></script>
+    <script type="text/javascript" src="../script/doT.js"></script>
+    <script src="./public/public_b.js"></script>
+    <script src="./frame/js/c.js"></script>
+    <script type="text/javascript">
+      if(them==1){
+        document.write('<link rel="stylesheet" type="text/css" href="./frame/css/b/c.css">');
+        document.write('<link rel="stylesheet" type="text/css" href="../css/aui-b.css">');
+      }else if(them==2){
+        document.write('<link rel="stylesheet" type="text/css" href="./frame/css/c/c.css">');
+        document.write('<link rel="stylesheet" type="text/css" href="../css/aui-c.css">');
+      }else{
+        document.write('<link rel="stylesheet" type="text/css" href="./frame/css/a/c.css">');
+        document.write('<link rel="stylesheet" type="text/css" href="../css/aui-a.css">');
+      }
+    </script>
+</head>
+<body>
+    <section class="shaixuan" id="header">
+        <div class="title">专题推荐</div>
+    </section>
+
+    <section id="list">
+        <div class="hot_div">
+            <ul id="div_list_f">
+
+            </ul>
+        </div>
+    </section>
+</body>
+<script type="text/x-dot-template" id="navcattpl">
+    {{~ it : value : index }}
+    <li onclick="detail('{{= value. topic_id }}','{{= value. topic_name }}','{{= value. topic_pic }}')">
+        <div class="bg_img" style="background-image: url('{{= value. topic_pic }}');background-size: 100% 100%;">{{= value. topic_name }}</div>
+    </li>
+
+    {{~}}
+</script>
+
+</html>

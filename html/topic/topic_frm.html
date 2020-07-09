@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <script type="text/javascript" src="../../script/api.js"></script>
+    <script src="../public/public.js"></script>
+    <script type="text/javascript">
+      if(them==1){
+        document.write('<link rel="stylesheet" type="text/css" href="../../css/aui-b.css">');
+        document.write('<link rel="stylesheet" type="text/css" href="./css/b/a.css">');
+      }else if(them==2){
+        document.write('<link rel="stylesheet" type="text/css" href="../../css/aui-c.css">');
+        document.write('<link rel="stylesheet" type="text/css" href="./css/c/a.css">');
+      }else{
+        document.write('<link rel="stylesheet" type="text/css" href="../../css/aui-a.css">');
+        document.write('<link rel="stylesheet" type="text/css" href="./css/a/a.css">');
+      }
+    </script>
+</head>
+<body>
+    <div id="title"></div>
+    <section id="list">
+        <div class="hot_div">
+            <ul id="vod_list">
+
+            </ul>
+        </div>
+    </section>
+</body>
+<script type="text/x-dot-template" id="navcattpl">
+  {{~ it : value : index }}
+  <li  tapmode onclick="vod_play('{{= value. vod_id }}','{{= value. vod_name }}','{{= value. type_id }}','{{= value. vod_area }}')">
+      <span class="vod_score">{{= value. vod_score }}</span>
+      <div class="bg_img" style="background-image: url('{{= value. vod_pic }}');background-size: 100% 100%;"></div>
+      <div class="vod_remarks">{{= value. vod_remarks }}</div>
+      <div class="vod_title">{{= value. vod_name }}</div>
+  </li>
+  {{~}}
+</script>
+<script type="text/javascript" src="../../script/jquery.js"></script>
+<script type="text/javascript" src="../../script/doT.js"></script>
+<script src="./js/a.js"></script>
+</html>

@@ -1,0 +1,8 @@
+#footer{
+    background-color: #fff; 
+    height: 50px;
+    box-shadow: 0px -1px 20px 0px rgba(0, 0, 0, 0.1);
+}
+header{ 
+    background:linear-gradient(to right,#1a234e 0,#335481 100%); 
+}
