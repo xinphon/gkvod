@@ -1,6 +1,6 @@
- <widget id="A6038462642541"  version="0.0.1">
+ <widget id="A6049523254067"  version="0.0.1">
 
-    <name>乐看</name>
+    <name>果壳影院</name>
 
     <description>
 
@@ -42,9 +42,9 @@
 
 	<preference name="statusBarAppearance" value="true"/>
 
-	<meta-data name="Mob-AppKey" value="2dec475a1336a"/>
+	<meta-data name="Mob-AppKey" value="2ff9ab39d55fe"/>
 
-	<meta-data name="Mob-AppSecret" value="e439b396fbc5d6b86bba4f54f8f927f4"/>
+	<meta-data name="Mob-AppSecret" value="c7d196538b6da755a7b8a08c65b8c441"/>
 
 	<permission name="readPhoneState" />
 
